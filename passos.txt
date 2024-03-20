@@ -1,0 +1,17 @@
+aula 1
+criar o projeto
+debug mode
+
+aula 2
+- no ficheiro app.py
+    - colocar no topo:
+    ########
+    from  flask import Flask, render_template
+    ########
+    -no corpo do codigo:
+    ###########
+    @app.route('/')
+        @app.route('/home')
+        def home():  # put application's code here
+            return render_template('home.html')
+    ##########
